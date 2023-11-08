@@ -1,0 +1,97 @@
+
+#cadastra {
+    display: none;
+  }
+
+#container{
+    padding: 100px 200px;
+}
+/* Reset de estilos para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Define um fundo simples e uma fonte padrão para o corpo do documento */
+  body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estiliza o cabeçalho com uma cor de fundo e texto simples */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estiliza links com sublinhado removido e cor de texto suave */
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Estiliza uma barra de navegação simples */
+  nav {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Define estilos para uma seção principal do conteúdo */
+  .main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estiliza cabeçalhos com tamanhos diferentes */
+  h1 {
+    font-size: 28px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  /* Estiliza caixas de texto de entrada e rótulos */
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  /* Estiliza botões com uma cor de fundo e texto claro */
+  button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Estiliza rodapé com cor de fundo escura e texto claro */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>LOGIN</title>
+  </head>
+  <body>
+    <div id="container">
+    <div id="login">
+      <form action="login.php" method="post">
+        <label>EMAIL</label>
+        <input
+          type="email" name="email" id="email" placeholder="email@email.com" required/>
+        <label>SENHA</label>
+        <input
+          type="password" name="senha" id="senha" placeholder="*****" required/>
+        <input type="submit" value="LOGIN" />
+      </form>
+      <h5>
+        <a href="#" id="toggleCadastra"> NÃO TEM CONTA? CLIQUE AQUI</a>
+      </h5>
+    </div>
+   
+
+    <div id="cadastra">
+        <form action="cadastra.php" method="post">
+            <label>LOGIN</label>
+            <input
+              type="text" name="login" id="login" placeholder="login" required/>
+            <label>EMAIL</label>
+            <input
+            type="email" name="email" id="email" placeholder="email@email.com" required/>
+            <label>SENHA</label>
+            <input
+              type="password" name="senha" id="senha" placeholder="*****" required/>
+            <input type="submit" value="CADASTRAR" />
+            <h5>
+                <a href="#" id="toggleLogin">TEM CONTA? CLIQUE AQUI</a>
+              </h5>
+          </form>
+        </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
