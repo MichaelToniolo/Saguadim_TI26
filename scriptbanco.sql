@@ -7,7 +7,8 @@ CREATE TABLE usuarios(
     usu_login VARCHAR(20) NOT NULL,
     usu_senha VARCHAR(50) NOT NULL,
     usu_status CHAR(1) NOT NULL,
-    usu_key VARCHAR(10) NOT NULL
+    usu_key VARCHAR(10) NOT NULL,
+    usu_email VARCHAR(100) NOT NULL
 );
 
 -- CRIAÇÃO DA TELA DE CLIENTE
