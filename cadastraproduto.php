@@ -12,13 +12,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $fornecedor_id = $_POST['fornecedor'];
 
     $sql = "SELECT COUNT(pro_id) FROM produtos WHERE pro_nome = '$nome'";
+    
     $retorno = mysqli_query($link,$sql);
     $cont = (mysqli_fetch_array($retorno)[0]);
 
     if($cont == 0){
         $sql = "INSERT INTO 
             produtos(pro_nome, pro_descricao, pro_custo, pro_preco, pro_quantidade, pro_validade, pro_status, fk_for_id)
-            VALUES('$nome', '$descricao', $custo, $preco, $quantidade, '$validade', 's', $fornecedor_id)";
+            VALUES('$nome', '$descricao', '$custo', '$preco', $quantidade, '$validade', 's', $fornecedor_id)";
             echo($sql);
             mysqli_query($link, $sql);
             echo"<script>window.alert('PRODUTO CADASTRADO COM SUCESSO');</script>";
@@ -49,7 +50,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         <label>DESCRIÇÃO</label>
         <textarea name='descricao' id="descricao"></textarea>
         <label>CUSTO</label>
-        <input type="number" step=0.01 name='custo' id="custo">
+        <input type="decimal" name='custo' id="custo">
         <label>PREÇO</label>
         <input type="decimal" name='preco' id="preco">
         <label>QUANTIDADE</label>

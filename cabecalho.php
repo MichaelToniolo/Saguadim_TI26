@@ -13,6 +13,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
         <li><a href="cadastraproduto.php">CADASTRAR PRODUTO</a></li>
         <li><a href="listaproduto.php">LISTAR PRODUTO</a></li>
         <li><a href="cadastro-cliente.php">LISTAR CLIENTES</a></li>
+        <li><a href="fornecedor.php">FORNECEDOR</a></li>
         <li><a href="encomendas.php">ENCOMENDAS</a></li>
         
 
